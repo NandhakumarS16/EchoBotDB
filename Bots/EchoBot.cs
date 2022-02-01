@@ -91,7 +91,7 @@ namespace EchoBotDB.Bots
 
                 var request = turnContext.Activity.Text;
                 Userquery _req = SetReq(request);
-                var replyText = "Sorry,I can't understand";
+                var replyText = "Sorry,I can't understand.Try, after sometime.";
                 await turnContext.SendActivityAsync(MessageFactory.Text(replyText, replyText), cancellationToken);
                 
                 return;
