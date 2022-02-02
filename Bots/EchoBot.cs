@@ -91,7 +91,7 @@ namespace EchoBotDB.Bots
 
                 var request = turnContext.Activity.Text;
                 Userquery _req = SetReq(request);
-                var replyText = "Sorry,I can't understand.Try, after sometime.";
+                var replyText = "Sorry,I can't understand.Try after sometime.";
                 await turnContext.SendActivityAsync(MessageFactory.Text(replyText, replyText), cancellationToken);
                 
                 return;
@@ -99,8 +99,6 @@ namespace EchoBotDB.Bots
         
            
         }
-
-       
 
         protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
         {
